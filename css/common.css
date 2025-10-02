@@ -1,0 +1,73 @@
+section:not(.section_1,.section_2){
+    padding: 0 50px 150px 50px;
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    
+    section:not(.section_1, .section_2){
+        padding: 0 20px 80px;
+    }
+
+}
+
+h2,
+h3,
+h4,
+p,
+span{
+    color: white;
+}
+
+.section_3 h3,
+.section_4 h3,
+.section_5 h3,
+.mo_section_3 h3{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.con_3 h4,
+.title_wrap_4 h4,
+.title_wrap_5 h4{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.title_wrap_2 p,
+.description_2 p,
+.con_3 p,
+.title_wrap_4 p,
+.title_wrap_5 p{
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px) {
+
+    .section_3 h3,
+    .section_4 h3,
+    .section_5 h3,
+    .mo_section_3 h3{
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        letter-spacing: -2px;
+    }
+
+    .title_wrap_2 p,
+    .description_2 p,
+    .con_3 p,
+    .title_wrap_4 p,
+    .title_wrap_5 p,
+    .mo_con_title_wrap_3 p,
+    .mo_title_wrap_4 p,
+    .info p{
+        font-size: 12px;
+    }
+    
+
+}
