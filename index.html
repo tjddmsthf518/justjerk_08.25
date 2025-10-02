@@ -1,838 +1,866 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JUSTJERK</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-
-        $(document).ready(function(){
-
-            var swiper = new Swiper(".tab_con_wrap_3", {
-                slidesPerView: 2.6,
-                spaceBetween: 24,
-                grabCursor: true,
-            });
-
-            var swiper = new Swiper(".mo_con_wrap_3", {
-                slidesPerView: 1.7,
-                spaceBetween: 16,
-                grabCursor: true,
-            });
-
-            var swiper = new Swiper(".con_5_1", {
-                loop: true,
-                spaceBetween: 24,
-                slidesPerView: 4,
-                freeMode: true,
-                watchSlidesProgress: true,
-            });
-
-            var swiper2 = new Swiper(".con_5_2", {
-                loop: true,
-                spaceBetween: 24,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                thumbs: {
-                    swiper: swiper,
-                },
-            });
-
-            var swiper = new Swiper(".con_5_3", {
-                loop: true,
-                spaceBetween: 24,
-                slidesPerView: 4,
-                freeMode: true,
-                watchSlidesProgress: true,
-            });
-
-            var swiper2 = new Swiper(".con_5_4", {
-                loop: true,
-                spaceBetween: 24,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                thumbs: {
-                    swiper: swiper,
-                },
-            });
-
+      $(document).ready(function () {
+        var swiper = new Swiper(".tab_con_wrap_3", {
+          slidesPerView: 2.6,
+          spaceBetween: 24,
+          grabCursor: true,
         });
 
+        var swiper = new Swiper(".mo_con_wrap_3", {
+          slidesPerView: 1.7,
+          spaceBetween: 16,
+          grabCursor: true,
+        });
+
+        var swiper = new Swiper(".con_5_1", {
+          loop: true,
+          spaceBetween: 24,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+
+        var swiper2 = new Swiper(".con_5_2", {
+          loop: true,
+          spaceBetween: 24,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+
+        var swiper = new Swiper(".con_5_3", {
+          loop: true,
+          spaceBetween: 24,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+
+        var swiper2 = new Swiper(".con_5_4", {
+          loop: true,
+          spaceBetween: 24,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+      });
     </script>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="wrap">
+      <header>
+        <div class="logo">
+          <a href="#">
+            <img src="image/logo.png" alt="logo" />
+          </a>
+        </div>
 
-        <header>
+        <div class="container">
+          <ul class="menu_wrap">
+            <li><a href="#">CREW</a></li>
+            <li><a href="#">DANCERS</a></li>
+            <li><a href="#">CLASS</a></li>
+            <li><a href="#">APPAREL SHOP</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
 
-            <div class="logo">
-                <a href="#">
-                    <img src="image/logo.png" alt="logo">
-                </a>
+          <div class="menu_bar">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </header>
+
+      <section class="section_1">
+        <video loop muted autoplay playsinline>
+          <source src="src= video/section_1 video.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section class="section_2">
+        <div class="title_wrap_2">
+          <h2 data-aos="fade-up" data-aos-duration="1000">JUSTJERK</h2>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
+            퍼포먼스 경계를 허무는 창의성과 팀워크로 <br />
+            국내외 주목받는 대한민국 대표 스트리트 댄스 크루입니다.
+          </p>
+        </div>
+
+        <div class="bg_2">
+          <img src="image/section_2/background_image.webp" alt="" />
+        </div>
+
+        <div class="description_2">
+          <p>
+            저스트절크 대표 영상 <br />
+            [1st Place] Just Jerk | Body Rock 2016
+          </p>
+
+          <div class="arrow_btn_2">
+            <img src="image/section_2/arrow_btn.png" alt="btn_2" />
+          </div>
+        </div>
+
+        <video src="video/section_2 video.mp4" controls></video>
+      </section>
+
+      <section class="section_3">
+        <h3 data-aos="fade-up" data-aos-duration="1000">Instructors</h3>
+
+        <div class="con_wrap_3">
+          <div
+            class="con_3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+          >
+            <img src="image/section_3/j-ho.jpg" alt="img" />
+
+            <div class="bg_3"></div>
+
+            <div class="con_title_wrap_3">
+              <h4>J-HO</h4>
+              <p>어반 댄스 (Urban Dance)</p>
+            </div>
+          </div>
+
+          <div
+            class="con_3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <img src="image/section_3/young-j.webp" alt="img" />
+
+            <div class="bg_3"></div>
+
+            <div class="con_title_wrap_3">
+              <h4>YOUNG-J</h4>
+              <p>코레오그래피 (Choreography)</p>
+            </div>
+          </div>
+
+          <div
+            class="con_3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+          >
+            <img src="image/section_3/renan.jpg" alt="img" />
+
+            <div class="bg_3"></div>
+
+            <div class="con_title_wrap_3">
+              <h4>RENAN</h4>
+              <p>코레오그래피 (Choreography)</p>
+            </div>
+          </div>
+
+          <div
+            class="con_3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img src="image/section_3/junho lee.jpg" alt="img" />
+
+            <div class="bg_3"></div>
+
+            <div class="con_title_wrap_3">
+              <h4>JUNHO LEE</h4>
+              <p>코레오그래피 (Choreography)</p>
+            </div>
+          </div>
+
+          <div
+            class="con_3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="250"
+          >
+            <img src="image/section_3/oh su.jpg" alt="img" />
+
+            <div class="bg_3"></div>
+
+            <div class="con_title_wrap_3">
+              <h4>OH SU</h4>
+              <p>하우스댄스 (House Dance)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="con_wrap_3">
+          <div
+            class="con_3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <img src="image/section_3/bella.jpg" alt="img" />
+
+            <div class="bg_3"></div>
+
+            <div class="con_title_wrap_3">
+              <h4>BELLA</h4>
+              <p>코레오그래피 (Choreography)</p>
+            </div>
+          </div>
+
+          <div
+            class="con_3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="350"
+          >
+            <img src="image/section_3/ukun.jpg" alt="img" />
+
+            <div class="bg_3"></div>
+
+            <div class="con_title_wrap_3">
+              <h4>UKUN</h4>
+              <p>힙합 (HipHop)</p>
+            </div>
+          </div>
+
+          <div
+            class="con_3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <img src="image/section_3/marbin.jpg" alt="img" />
+
+            <div class="bg_3"></div>
+
+            <div class="con_title_wrap_3">
+              <h4>MARBIN</h4>
+              <p>코레오그래피 (Choreography)</p>
+            </div>
+          </div>
+
+          <div
+            class="con_3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="450"
+          >
+            <img src="image/section_3/s-one.jpg" alt="img" />
+
+            <div class="bg_3"></div>
+
+            <div class="con_title_wrap_3">
+              <h4>S.ONE</h4>
+              <p>코레오그래피 (Choreography)</p>
+            </div>
+          </div>
+
+          <div
+            class="con_3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <img src="image/section_3/hwasu.jpg" alt="img" />
+
+            <div class="bg_3"></div>
+
+            <div class="con_title_wrap_3">
+              <h4>HWASU</h4>
+              <p>코레오그래피 (Choreography)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- pc 버전 -->
+
+      <section class="tab_section_3">
+        <h3 data-aos="fade-up" data-aos-duration="1000">Instructors</h3>
+
+        <div class="swiper tab_con_wrap_3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="image/section_3/j-ho.jpg" alt="img" />
+
+              <div class="tab_con_title_wrap_3">
+                <h4>J-HO</h4>
+                <p>어반 댄스 (Urban Dance)</p>
+              </div>
             </div>
 
-            <div class="container">
+            <div class="swiper-slide">
+              <img src="image/section_3/young-j.webp" alt="img" />
 
-                <ul class="menu_wrap">
-                    <li><a href="#">CREW</a></li>
-                    <li><a href="#">DANCERS</a></li>
-                    <li><a href="#">CLASS</a></li>
-                    <li><a href="#">APPAREL SHOP</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-
-                <div class="menu_bar">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-
+              <div class="tab_con_title_wrap_3">
+                <h4>YOUNG-J</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
             </div>
 
-        </header>
+            <div class="swiper-slide">
+              <img src="image/section_3/renan.jpg" alt="img" />
 
-        <section class="section_1">
-            <video src="video/section_1 video.mp4" loop muted autoplay></video>
-        </section>
-        
-        <section class="section_2">
-
-            <div class="title_wrap_2">
-                <h2 data-aos="fade-up" data-aos-duration="1000">JUSTJERK</h2>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
-                    퍼포먼스 경계를 허무는 창의성과 팀워크로 <br>
-                    국내외 주목받는 대한민국 대표 스트리트 댄스 크루입니다.
-                </p>
+              <div class="tab_con_title_wrap_3">
+                <h4>RENAN</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
             </div>
 
-            <div class="bg_2">
-                <img src="image/section_2/background_image.webp" alt="">
+            <div class="swiper-slide">
+              <img src="image/section_3/junho lee.jpg" alt="img" />
+
+              <div class="tab_con_title_wrap_3">
+                <h4>JUNHO LEE</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
             </div>
 
-            <div class="description_2">
+            <div class="swiper-slide">
+              <img src="image/section_3/oh su.jpg" alt="img" />
+
+              <div class="tab_con_title_wrap_3">
+                <h4>OH SU</h4>
+                <p>하우스댄스 (House Dance)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/bella.jpg" alt="img" />
+
+              <div class="tab_con_title_wrap_3">
+                <h4>BELLA</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/ukun.jpg" alt="img" />
+
+              <div class="tab_con_title_wrap_3">
+                <h4>UKUN</h4>
+                <p>힙합 (HipHop)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/marbin.jpg" alt="img" />
+
+              <div class="tab_con_title_wrap_3">
+                <h4>MARBIN</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/s-one.jpg" alt="img" />
+
+              <div class="tab_con_title_wrap_3">
+                <h4>S.ONE</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/hwasu.jpg" alt="img" />
+
+              <div class="tab_con_title_wrap_3">
+                <h4>HWASU</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- tab 버전 -->
+
+      <section class="mo_section_3">
+        <h3 data-aos="fade-up" data-aos-duration="1000">Instructors</h3>
+
+        <div class="swiper mo_con_wrap_3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="image/section_3/j-ho.jpg" alt="img" />
+
+              <div class="mo_con_title_wrap_3">
+                <h4>J-HO</h4>
+                <p>어반 댄스 (Urban Dance)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/young-j.webp" alt="img" />
+
+              <div class="mo_con_title_wrap_3">
+                <h4>YOUNG-J</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/renan.jpg" alt="img" />
+
+              <div class="mo_con_title_wrap_3">
+                <h4>RENAN</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/junho lee.jpg" alt="img" />
+
+              <div class="mo_con_title_wrap_3">
+                <h4>JUNHO LEE</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/oh su.jpg" alt="img" />
+
+              <div class="mo_con_title_wrap_3">
+                <h4>OH SU</h4>
+                <p>하우스댄스 (House Dance)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/bella.jpg" alt="img" />
+
+              <div class="mo_con_title_wrap_3">
+                <h4>BELLA</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/ukun.jpg" alt="img" />
+
+              <div class="mo_con_title_wrap_3">
+                <h4>UKUN</h4>
+                <p>힙합 (HipHop)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/marbin.jpg" alt="img" />
+
+              <div class="mo_con_title_wrap_3">
+                <h4>MARBIN</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/s-one.jpg" alt="img" />
+
+              <div class="mo_con_title_wrap_3">
+                <h4>S.ONE</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="image/section_3/hwasu.jpg" alt="img" />
+
+              <div class="mo_con_title_wrap_3">
+                <h4>HWASU</h4>
+                <p>코레오그래피 (Choreography)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- mo 버전 -->
+
+      <section class="section_4">
+        <h3 data-aos="fade-up" data-aos-duration="1000">Type of Classes</h3>
+
+        <div class="con_wrap_4">
+          <div class="con_4 con_4_1">
+            <a href="#">
+              <div class="title_wrap_4">
+                <h4
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="150"
+                >
+                  Basic
+                </h4>
                 <p>
-                    저스트절크 대표 영상 <br>
-                    [1st Place] Just Jerk | Body Rock 2016
+                  기본적인 리듬 감각과 간단한 스텝을 <br />
+                  배우며 춤의 즐거움을 느낄 수 있습니다.
                 </p>
-
-                <div class="arrow_btn_2">
-                    <img src="image/section_2/arrow_btn.png" alt="btn_2">
-                </div>
-            </div>
-
-            <video src="video/section_2 video.mp4" controls></video>
-
-        </section>
-
-        <section class="section_3">
-
-            <h3 data-aos="fade-up" data-aos-duration="1000">Instructors</h3>
-
-            <div class="con_wrap_3">
-
-                <div class="con_3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
-                    <img src="image/section_3/j-ho.jpg" alt="img">
-
-                    <div class="bg_3"></div>
-                        
-                    <div class="con_title_wrap_3">
-                        <h4>J-HO</h4>
-                        <p>어반 댄스 (Urban Dance)</p>
-                    </div>
-                    
-                </div>
-
-                <div class="con_3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                    <img src="image/section_3/young-j.webp" alt="img">
-
-                    <div class="bg_3"></div>
-
-                    <div class="con_title_wrap_3">
-                        <h4>YOUNG-J</h4>
-                        <p>코레오그래피 (Choreography)</p>
-                    </div>
-                    
-                </div>
-
-                <div class="con_3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
-                    <img src="image/section_3/renan.jpg" alt="img">
-
-                    <div class="bg_3"></div>
-
-                    <div class="con_title_wrap_3">
-                        <h4>RENAN</h4>
-                        <p>코레오그래피 (Choreography)</p>
-                    </div>
-                    
-                </div>
-
-                <div class="con_3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <img src="image/section_3/junho lee.jpg" alt="img">
-
-                    <div class="bg_3"></div>
-
-                    <div class="con_title_wrap_3">
-                        <h4>JUNHO LEE</h4>
-                        <p>코레오그래피 (Choreography)</p>
-                    </div>
-                    
-                </div>
-
-                <div class="con_3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
-                    <img src="image/section_3/oh su.jpg" alt="img">
-
-                    <div class="bg_3"></div>
-
-                    <div class="con_title_wrap_3">
-                        <h4>OH SU</h4>
-                        <p>하우스댄스 (House Dance)</p>
-                    </div>
-                    
-                </div>
-            
-            </div>
-
-            <div class="con_wrap_3">
-
-                <div class="con_3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-                    <img src="image/section_3/bella.jpg" alt="img">
-
-                    <div class="bg_3"></div>
-
-                    <div class="con_title_wrap_3">
-                        <h4>BELLA</h4>
-                        <p>코레오그래피 (Choreography)</p>
-                    </div>
-                    
-                </div>
-
-                <div class="con_3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">
-                    <img src="image/section_3/ukun.jpg" alt="img">
-
-                    <div class="bg_3"></div>
-
-                    <div class="con_title_wrap_3">
-                        <h4>UKUN</h4>
-                        <p>힙합 (HipHop)</p>
-                    </div>
-                    
-                </div>
-
-                <div class="con_3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    <img src="image/section_3/marbin.jpg" alt="img">
-
-                    <div class="bg_3"></div>
-
-                    <div class="con_title_wrap_3">
-                        <h4>MARBIN</h4>
-                        <p>코레오그래피 (Choreography)</p>
-                    </div>
-                    
-                </div>
-
-                <div class="con_3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">
-                    <img src="image/section_3/s-one.jpg" alt="img">
-
-                    <div class="bg_3"></div>
-
-                    <div class="con_title_wrap_3">
-                        <h4>S.ONE</h4>
-                        <p>코레오그래피 (Choreography)</p>
-                    </div>
-                    
-                </div>
-
-                <div class="con_3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                    <img src="image/section_3/hwasu.jpg" alt="img">
-
-                    <div class="bg_3"></div>
-                    
-                    <div class="con_title_wrap_3">
-                        <h4>HWASU</h4>
-                        <p>코레오그래피 (Choreography)</p>
-                    </div>
-                    
-                </div>
-
-            </div>
-
-        </section>
-        <!-- pc 버전 -->
-
-        <section class="tab_section_3">
-
-            <h3 data-aos="fade-up" data-aos-duration="1000">Instructors</h3>
-
-            <div class="swiper tab_con_wrap_3">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="image/section_3/j-ho.jpg" alt="img">
-
-                        <div class="tab_con_title_wrap_3">
-                            <h4>J-HO</h4>
-                            <p>어반 댄스 (Urban Dance)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/young-j.webp" alt="img">
-
-                        <div class="tab_con_title_wrap_3">
-                            <h4>YOUNG-J</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/renan.jpg" alt="img">
-
-                        <div class="tab_con_title_wrap_3">
-                            <h4>RENAN</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/junho lee.jpg" alt="img">
-
-                        <div class="tab_con_title_wrap_3">
-                            <h4>JUNHO LEE</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/oh su.jpg" alt="img">
-
-                        <div class="tab_con_title_wrap_3">
-                            <h4>OH SU</h4>
-                            <p>하우스댄스 (House Dance)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/bella.jpg" alt="img">
-
-                        <div class="tab_con_title_wrap_3">
-                            <h4>BELLA</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/ukun.jpg" alt="img">
-
-                        <div class="tab_con_title_wrap_3">
-                            <h4>UKUN</h4>
-                            <p>힙합 (HipHop)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/marbin.jpg" alt="img">
-
-                        <div class="tab_con_title_wrap_3">
-                            <h4>MARBIN</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/s-one.jpg" alt="img">
-
-                        <div class="tab_con_title_wrap_3">
-                            <h4>S.ONE</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/hwasu.jpg" alt="img">
-
-                        <div class="tab_con_title_wrap_3">
-                            <h4>HWASU</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- tab 버전 -->
-
-        <section class="mo_section_3">
-
-            <h3 data-aos="fade-up" data-aos-duration="1000">Instructors</h3>
-
-            <div class="swiper mo_con_wrap_3">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="image/section_3/j-ho.jpg" alt="img">
-
-                        <div class="mo_con_title_wrap_3">
-                            <h4>J-HO</h4>
-                            <p>어반 댄스 (Urban Dance)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/young-j.webp" alt="img">
-
-                        <div class="mo_con_title_wrap_3">
-                            <h4>YOUNG-J</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/renan.jpg" alt="img">
-
-                        <div class="mo_con_title_wrap_3">
-                            <h4>RENAN</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/junho lee.jpg" alt="img">
-
-                        <div class="mo_con_title_wrap_3">
-                            <h4>JUNHO LEE</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/oh su.jpg" alt="img">
-
-                        <div class="mo_con_title_wrap_3">
-                            <h4>OH SU</h4>
-                            <p>하우스댄스 (House Dance)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/bella.jpg" alt="img">
-
-                        <div class="mo_con_title_wrap_3">
-                            <h4>BELLA</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/ukun.jpg" alt="img">
-
-                        <div class="mo_con_title_wrap_3">
-                            <h4>UKUN</h4>
-                            <p>힙합 (HipHop)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/marbin.jpg" alt="img">
-
-                        <div class="mo_con_title_wrap_3">
-                            <h4>MARBIN</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/s-one.jpg" alt="img">
-
-                        <div class="mo_con_title_wrap_3">
-                            <h4>S.ONE</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="image/section_3/hwasu.jpg" alt="img">
-
-                        <div class="mo_con_title_wrap_3">
-                            <h4>HWASU</h4>
-                            <p>코레오그래피 (Choreography)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- mo 버전 -->
-
-        <section class="section_4">
-
-            <h3 data-aos="fade-up" data-aos-duration="1000">Type of Classes</h3>
-
-            <div class="con_wrap_4">
-
-                <div class="con_4 con_4_1">
-                    <a href="#">
-
-                        <div class="title_wrap_4">
-                            <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">Basic</h4>
-                            <p>
-                                기본적인 리듬 감각과 간단한 스텝을 <br>
-                                배우며 춤의 즐거움을 느낄 수 있습니다.
-                            </p>
-                        </div>
-
-                        <div class="line_4 line_4_1"></div>
-
-                        <img src="image/section_4/basic.png" alt="basic">
-                    </a>
-
-                </div>
-
-                <div class="con_4 con_4_2">
-                    <a href="#">
-
-                        <div class="title_wrap_4">
-                            <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Beginner</h4>
-                            <p>
-                                기본 동작을 연결하며 음악에 맞춰 <br>
-                                자연스럽게 표현하는 법을 연습합니다.
-                            </p>
-                        </div>
-
-                        <div class="line_4 line_4_2"></div>
-
-                        <img src="image/section_4/beginner.png" alt="beginner">
-                    </a>
-
-                </div>
-
-                <div class="con_4 con_4_3">
-                    <a href="#">
-
-                        <div class="title_wrap_4">
-                            <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">Intermediate</h4>
-                            <p>
-                                다양한 스타일을 접하며, 테크닉과 표현력을 <br>
-                                함께 키워 자신만의 색깔을 찾기 시작합니다.
-                            </p>
-                        </div>
-
-                        <div class="line_4 line_4_3"></div>
-
-                        <img src="image/section_4/intermediate.png" alt="intermediate">
-                    </a>
-
-                </div>
-
-                <div class="con_4 con_4_4">
-                    <a href="#">
-
-                        <div class="title_wrap_4">
-                            <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="450">Advanced</h4>
-                            <p>
-                                복잡한 안무와 디테일한 테크닉을 다루며, <br>
-                                무대 위에서도 빛나는 퍼포먼스를 완성합니다.
-                            </p>
-                        </div>
-
-                        <div class="line_4 line_4_4"></div>
-
-                        <img src="image/section_4/advanced.png" alt="advanced">
-                    </a>
-                </div>
-
-                <div class="con_4 con_4_5">
-                    <a href="#">
-
-                        <div class="title_wrap_4">
-                            <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="550">Pro Class</h4>
-                            <p>
-                                퍼포먼스, 창작 안무, 무대 경험까지 아우르는 <br>
-                                종합 트레이닝으로 프로페셔널 댄서를 목표로 합니다.
-                            </p>
-                        </div>
-
-                        <div class="line_4 line_4_5"></div>
-
-                        <img src="image/section_4/proclass.png" alt="proclass">
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-        <!-- pc 버전 -->
-
-        <section class="mo_section_4">
-
-            <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">Type of Classes</h3>
-
-            <div class="mo_con_wrap_4">
-
-                <div class="mo_con_4">
-
-                    <a href="#">
-
-                        <img src="image/section_4/basic.png" alt="basic">
-
-                        <div class="mo_title_wrap_4">
-                            <h4>Basic</h4>
-                            <p>
-                                기본적인 리듬 감각과 간단한 스텝을 <br>
-                                배우며 춤의 즐거움을 느낄 수 있습니다.
-                            </p>
-                        </div>
-
-                    </a>
-
-                </div>
-
-                <div class="mo_con_4">
-
-                    <a href="#">
-
-                        <img src="image/section_4/beginner.png" alt="beginner">
-
-                        <div class="mo_title_wrap_4">
-                            <h4>Beginner</h4>
-                            <p>
-                                기본 동작을 연결하며 음악에 맞춰 <br>
-                                자연스럽게 표현하는 법을 연습합니다.
-                            </p>
-                        </div>
-
-                    </a>
-
-                </div>
-
-                <div class="mo_con_4">
-
-                    <a href="#">
-
-                        <img src="image/section_4/intermediate.png" alt="intermediate">
-
-                        <div class="mo_title_wrap_4">
-                            <h4>Intermediate</h4>
-                            <p>
-                                다양한 스타일을 접하며, 테크닉과 표현력을 <br>
-                                함께 키워 자신만의 색깔을 찾기 시작합니다.
-                            </p>
-                        </div>
-
-                    </a>
-
-                </div>
-
-                <div class="mo_con_4">
-
-                    <a href="#">
-
-                        <img src="image/section_4/advanced.png" alt="advanced">
-
-                        <div class="mo_title_wrap_4">
-                            <h4>Advanced</h4>
-                            <p>
-                                복잡한 안무와 디테일한 테크닉을 다루며, <br>
-                                무대 위에서도 빛나는 퍼포먼스를 완성합니다.
-                            </p>
-                        </div>
-
-                    </a>
-
-                </div>
-
-                <div class="mo_con_4">
-
-                    <a href="#">
-
-                        <img src="image/section_4/proclass.png" alt="proclass">
-
-                        <div class="mo_title_wrap_4">
-                            <h4>Pro Class</h4>
-                            <p>
-                                퍼포먼스, 창작 안무, 무대 경험까지 아우르는 <br>
-                                종합 트레이닝으로 프로페셔널 댄서를 목표로 합니다.
-                            </p>
-                        </div>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-        <!-- mo 버전 -->
-
-        <section class="section_5">
-
-            <h3 data-aos="fade-up" data-aos-duration="1000">Academy</h3>
-
-            <div class="con_wrap_5">
-
-                <div class="con_5">
-
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper con_5_2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="image/section_5/hapjeong_1.jpg" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="image/section_5/hapjeong_2.jpg" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="image/section_5/hapjeong_3.jpg" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="image/section_5/hapjeong_4.jpg" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-
-                    <div thumbsSlider="" class="swiper con_5_1">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="image/section_5/hapjeong_1.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="image/section_5/hapjeong_2.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="image/section_5/hapjeong_3.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="image/section_5/hapjeong_4.jpg" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="title_wrap_5">
-                        <h4>아카데미 합정점</h4>
-                        <p>
-                            저스트절크 아카데미의 1호점으로서, 최대 수용인원 80여명의 홀과 <br>
-                            다양한 강사진 구성으로 장르와 스타일에 맞춰 수업을 들을 수 있습니다.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="con_5">
-
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper con_5_4">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="image/section_5/ehwa_1.jpg" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="image/section_5/ehwa_2.jpg" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="image/section_5/ehwa_3.jpg" />
-                                </a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">
-                                    <img src="image/section_5/ehwa_4.jpg" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-
-                    <div thumbsSlider="" class="swiper con_5_3">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="image/section_5/ehwa_1.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="image/section_5/ehwa_2.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="image/section_5/ehwa_3.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="image/section_5/ehwa_4.jpg" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="title_wrap_5">
-                        <h4>아카데미 이화점</h4>
-                        <p>
-                            저스트절크 댄스 아카데미 이화여대점은 최대 수용인원 120명의 넓은 홀과 <br>
-                            개인 연습실 또한 구비되어 있어, 프라이빗하고 집중할 수 있는 환경에서 연습과 안무 제작 등이 가능합니다.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <footer>
-
-            <div class="footer_logo">
-                <img src="image/footer_logo.webp" alt="footer_logo">
-            </div>
-
-            <div class="info">
-
-                <p class="company">
-                    (주)저스트절크 <br>
-                    대표: 성영재, 최준호 ㅣ사업자등록번호: 458-88-03091 ㅣ<br class="line_break"> 주소: 서울특별시 서대문구 이화여대길 59, 7층
+              </div>
+
+              <div class="line_4 line_4_1"></div>
+
+              <img src="image/section_4/basic.png" alt="basic" />
+            </a>
+          </div>
+
+          <div class="con_4 con_4_2">
+            <a href="#">
+              <div class="title_wrap_4">
+                <h4
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="250"
+                >
+                  Beginner
+                </h4>
+                <p>
+                  기본 동작을 연결하며 음악에 맞춰 <br />
+                  자연스럽게 표현하는 법을 연습합니다.
                 </p>
+              </div>
 
-                <div class="footer_number">
-                    <p class="hapjeong_num">합정점 문의: 02-336-2040</p>
-                    <p class="ehwa_num">이대점 문의: 0507-1447-2041</p>
+              <div class="line_4 line_4_2"></div>
+
+              <img src="image/section_4/beginner.png" alt="beginner" />
+            </a>
+          </div>
+
+          <div class="con_4 con_4_3">
+            <a href="#">
+              <div class="title_wrap_4">
+                <h4
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="350"
+                >
+                  Intermediate
+                </h4>
+                <p>
+                  다양한 스타일을 접하며, 테크닉과 표현력을 <br />
+                  함께 키워 자신만의 색깔을 찾기 시작합니다.
+                </p>
+              </div>
+
+              <div class="line_4 line_4_3"></div>
+
+              <img src="image/section_4/intermediate.png" alt="intermediate" />
+            </a>
+          </div>
+
+          <div class="con_4 con_4_4">
+            <a href="#">
+              <div class="title_wrap_4">
+                <h4
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="450"
+                >
+                  Advanced
+                </h4>
+                <p>
+                  복잡한 안무와 디테일한 테크닉을 다루며, <br />
+                  무대 위에서도 빛나는 퍼포먼스를 완성합니다.
+                </p>
+              </div>
+
+              <div class="line_4 line_4_4"></div>
+
+              <img src="image/section_4/advanced.png" alt="advanced" />
+            </a>
+          </div>
+
+          <div class="con_4 con_4_5">
+            <a href="#">
+              <div class="title_wrap_4">
+                <h4
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="550"
+                >
+                  Pro Class
+                </h4>
+                <p>
+                  퍼포먼스, 창작 안무, 무대 경험까지 아우르는 <br />
+                  종합 트레이닝으로 프로페셔널 댄서를 목표로 합니다.
+                </p>
+              </div>
+
+              <div class="line_4 line_4_5"></div>
+
+              <img src="image/section_4/proclass.png" alt="proclass" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- pc 버전 -->
+
+      <section class="mo_section_4">
+        <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+          Type of Classes
+        </h3>
+
+        <div class="mo_con_wrap_4">
+          <div class="mo_con_4">
+            <a href="#">
+              <img src="image/section_4/basic.png" alt="basic" />
+
+              <div class="mo_title_wrap_4">
+                <h4>Basic</h4>
+                <p>
+                  기본적인 리듬 감각과 간단한 스텝을 <br />
+                  배우며 춤의 즐거움을 느낄 수 있습니다.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="mo_con_4">
+            <a href="#">
+              <img src="image/section_4/beginner.png" alt="beginner" />
+
+              <div class="mo_title_wrap_4">
+                <h4>Beginner</h4>
+                <p>
+                  기본 동작을 연결하며 음악에 맞춰 <br />
+                  자연스럽게 표현하는 법을 연습합니다.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="mo_con_4">
+            <a href="#">
+              <img src="image/section_4/intermediate.png" alt="intermediate" />
+
+              <div class="mo_title_wrap_4">
+                <h4>Intermediate</h4>
+                <p>
+                  다양한 스타일을 접하며, 테크닉과 표현력을 <br />
+                  함께 키워 자신만의 색깔을 찾기 시작합니다.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="mo_con_4">
+            <a href="#">
+              <img src="image/section_4/advanced.png" alt="advanced" />
+
+              <div class="mo_title_wrap_4">
+                <h4>Advanced</h4>
+                <p>
+                  복잡한 안무와 디테일한 테크닉을 다루며, <br />
+                  무대 위에서도 빛나는 퍼포먼스를 완성합니다.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="mo_con_4">
+            <a href="#">
+              <img src="image/section_4/proclass.png" alt="proclass" />
+
+              <div class="mo_title_wrap_4">
+                <h4>Pro Class</h4>
+                <p>
+                  퍼포먼스, 창작 안무, 무대 경험까지 아우르는 <br />
+                  종합 트레이닝으로 프로페셔널 댄서를 목표로 합니다.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- mo 버전 -->
+
+      <section class="section_5">
+        <h3 data-aos="fade-up" data-aos-duration="1000">Academy</h3>
+
+        <div class="con_wrap_5">
+          <div class="con_5">
+            <div
+              style="
+                --swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff;
+              "
+              class="swiper con_5_2"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="image/section_5/hapjeong_1.jpg" />
+                  </a>
                 </div>
-
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="image/section_5/hapjeong_2.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="image/section_5/hapjeong_3.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="image/section_5/hapjeong_4.jpg" />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
 
-            <span class="copylight">ⓒ 2025 justjerk Inc. All Rights Reserved.</span>
-            
-        </footer>
+            <div thumbsSlider="" class="swiper con_5_1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="image/section_5/hapjeong_1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/section_5/hapjeong_2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/section_5/hapjeong_3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/section_5/hapjeong_4.jpg" />
+                </div>
+              </div>
+            </div>
 
+            <div class="title_wrap_5">
+              <h4>아카데미 합정점</h4>
+              <p>
+                저스트절크 아카데미의 1호점으로서, 최대 수용인원 80여명의 홀과
+                <br />
+                다양한 강사진 구성으로 장르와 스타일에 맞춰 수업을 들을 수
+                있습니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="con_5">
+            <div
+              style="
+                --swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff;
+              "
+              class="swiper con_5_4"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="image/section_5/ehwa_1.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="image/section_5/ehwa_2.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="image/section_5/ehwa_3.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="image/section_5/ehwa_4.jpg" />
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <div thumbsSlider="" class="swiper con_5_3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="image/section_5/ehwa_1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/section_5/ehwa_2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/section_5/ehwa_3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/section_5/ehwa_4.jpg" />
+                </div>
+              </div>
+            </div>
+
+            <div class="title_wrap_5">
+              <h4>아카데미 이화점</h4>
+              <p>
+                저스트절크 댄스 아카데미 이화여대점은 최대 수용인원 120명의 넓은
+                홀과 <br />
+                개인 연습실 또한 구비되어 있어, 프라이빗하고 집중할 수 있는
+                환경에서 연습과 안무 제작 등이 가능합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer_logo">
+          <img src="image/footer_logo.webp" alt="footer_logo" />
+        </div>
+
+        <div class="info">
+          <p class="company">
+            (주)저스트절크 <br />
+            대표: 성영재, 최준호 ㅣ사업자등록번호: 458-88-03091 ㅣ<br
+              class="line_break"
+            />
+            주소: 서울특별시 서대문구 이화여대길 59, 7층
+          </p>
+
+          <div class="footer_number">
+            <p class="hapjeong_num">합정점 문의: 02-336-2040</p>
+            <p class="ehwa_num">이대점 문의: 0507-1447-2041</p>
+          </div>
+        </div>
+
+        <span class="copylight">ⓒ 2025 justjerk Inc. All Rights Reserved.</span>
+      </footer>
     </div>
-    
-    <script>
-        AOS.init();
-    </script>
 
-</body>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
