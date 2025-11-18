@@ -37,7 +37,6 @@ header{
 .menu_bar{
     width: 24px;
     margin-left: 132px;
-    cursor: pointer;
 }
 
 .menu_bar i{
@@ -126,14 +125,16 @@ header{
 }
 
 .title_wrap_2 h2{
-    font-size: 165px;
+    font-size: 196px;
     font-weight: 700;
     margin-bottom: 50px;
-    letter-spacing: -2px;
+    letter-spacing: -10px;
 }
 
 .title_wrap_2 p{
-    line-height: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
     margin-bottom: 74px;
     color: #fffFFFa8;
 }
@@ -145,14 +146,9 @@ header{
     margin-bottom: 75px;
 }
 
-.description_2{
-    display: flex;
-    margin-left: 271px;
-}
-
-.arrow_btn_2{
+/* .arrow_btn_2{
     margin-top: 5px;
-}
+} */
 
 .section_2 video{
     width: 900px;
@@ -172,10 +168,10 @@ header{
     .title_wrap_2 h2{
         font-size: 64px;
         margin-bottom: 10px;
+        letter-spacing: -1px;
     }
 
     .bg_2,
-    .description_2,
     .arrow_btn_2{
         display: none;
     }
@@ -201,11 +197,12 @@ header{
 
     .title_wrap_2 h2{
         font-size: 36px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .title_wrap_2 p{
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 20px;
         margin-bottom: 0;
     }
 
@@ -401,7 +398,6 @@ header{
 
 .title_wrap_4 p{
     opacity: 0.5;
-    line-height: 23px;
     letter-spacing: -1px;
     margin-bottom: 43px;
 }
@@ -476,7 +472,11 @@ header{
     }
 
     .mo_con_4{
-        margin-bottom: 35px;
+        margin-bottom: 40px;
+    }
+
+    .mo_con_4_4{
+        margin-bottom: 0;
     }
 
     .mo_title_wrap_4{
@@ -511,7 +511,7 @@ header{
 
     .mo_title_wrap_4{
         margin-top: 10px;
-        margin-bottom: 35px;
+        /* margin-bottom: 40px; */
     }
 
     .mo_section_4 h3{
@@ -522,14 +522,16 @@ header{
     }
 
     .mo_title_wrap_4 h4{
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 700;
         color: #c51111;
-        margin-bottom: 5px;
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
 
     .mo_title_wrap_4 p{
-        line-height: 15px;
+        font-size: 14px;
+        line-height: 20px;
         opacity: 0.5;
     }
     
@@ -567,7 +569,7 @@ header{
 .con_5_1 {
     height: 119px;
     padding-top: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .con_5_1 .swiper-slide {
@@ -581,11 +583,11 @@ header{
 }
 
 .title_wrap_5 h4{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .title_wrap_5 p{
-    line-height: 23px;
+    line-height: 26px;
 }
 
 .con_5_4 {
@@ -596,7 +598,7 @@ header{
 .con_5_3 {
     height: 119px;
     padding-top: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .con_5_3 .swiper-slide {
@@ -662,7 +664,7 @@ header{
     }
 
     .title_wrap_5{
-        margin-top: 10px;
+        margin-top: 15px;
     }
     
     .title_wrap_5 h4{

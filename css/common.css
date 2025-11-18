@@ -35,15 +35,14 @@ span{
     font-weight: 700;
 }
 
-
-.title_wrap_2 p,
-.description_2 p,
+/* .description_2 p, */
 .con_3 p,
 .title_wrap_4 p,
 .title_wrap_5 p{
     font-size: 16px;
     font-weight: 400;
     opacity: 0.7;
+    line-height: 26px;
 }
 
 @media screen and (max-width: 768px) {
@@ -58,16 +57,14 @@ span{
         letter-spacing: -2px;
     }
 
-    .title_wrap_2 p,
-    .description_2 p,
     .con_3 p,
     .title_wrap_4 p,
     .title_wrap_5 p,
     .mo_con_title_wrap_3 p,
     .mo_title_wrap_4 p,
     .info p{
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 20px;
     }
     
-
 }
