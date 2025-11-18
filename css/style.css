@@ -192,7 +192,7 @@ header{
     }
 
     .title_wrap_2{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .title_wrap_2 h2{
@@ -530,8 +530,6 @@ header{
     }
 
     .mo_title_wrap_4 p{
-        font-size: 14px;
-        line-height: 20px;
         opacity: 0.5;
     }
     
